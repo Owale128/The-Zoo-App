@@ -1,0 +1,24 @@
+
+.notFoundContainer {
+    display: flex;
+    height: 100vh;
+    padding-top: 8rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+
+    h1, h2 {
+        font-size: 3rem;
+    }
+
+    img {
+        margin: 2rem 0;
+        width: 5rem;
+    }
+    .link {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        color: blue;
+    }
+}

@@ -1,0 +1,41 @@
+@import 'keyframes';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    animation: fadeIn 0.3s ease; 
+    
+}
+
+header {
+    nav {
+
+        ul {
+            list-style: none;
+            li a {
+                font-size: 1.3rem;
+                color: white;
+            }
+            }
+    }  
+}
+
+main {
+    
+    text-align: center;
+   
+    // background:  url('https://cdn.pixabay.com/photo/2018/03/02/19/21/nature-3194001_1280.jpg') no-repeat center center / cover;
+    background: linear-gradient(90deg, #7d7d7d, #dadada, #7d7d7d);
+
+
+}
+
+footer, header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.5vh;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,92 @@
+.AnimalNotFoundTxt {
+    height: 87vh;
+    font-size: 4rem;
+    padding-top: 12rem;
+}
+
+.animalDetailContainer {
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    position: relative;
+ 
+    
+    .animalContainer, .aboutTxtContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25rem;
+        height: 29rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: antiquewhite;
+        border: 0.1rem solid black;
+        margin: 3rem;
+        }
+        
+            span {
+                font-weight: bold;
+                }
+
+            h5 {
+                font-size: 1.5rem;
+                }
+
+             img {
+            border: 0.1rem solid black;
+            width: 80%;
+            height: 13rem;
+            margin: 0.5rem 0;
+            border-radius: 1rem;
+             }
+
+        p{
+            padding: 1rem;
+            border-top: 0.01rem solid black;
+        }
+
+        .feedTxt {
+            color: blue;
+            font-size: 1.2rem;
+        }
+        
+        .feedBtn {
+            cursor: pointer;
+            margin-top: 1rem;
+            padding: 0.2rem;
+            font-size: 1rem;
+            border-radius: 0.3rem;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: white;
+                background-color: green;
+            }
+        }
+
+        .arrowIcon {
+            width: 5rem;
+            border: none;
+            height: 6rem;
+        }
+
+        .backBtn {
+            position: absolute;
+            top:0;
+            left: 0;
+            cursor: pointer;
+            margin: 1rem;
+            padding: 0.1rem;
+            font-size: 0.9rem;
+            border-radius: 0.3rem;
+            transition: 0.2s ease;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+}

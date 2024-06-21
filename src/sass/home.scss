@@ -1,0 +1,35 @@
+
+.homeContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 86.9vh;
+    padding-bottom: 6rem;
+    
+    #homeHeading {
+        font-size: 3rem;
+    }
+    
+    button {
+        cursor: pointer;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        margin: 2rem 0 3rem 0;
+        border-radius: 1rem;
+        // text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.8);
+        color: white;
+        background-color: black;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.3);
+        }
+        
+        }
+        
+        img {
+            width: 6rem;
+            animation: moveUpAndDown 1.8s infinite ease-in-out;
+        }
+}
