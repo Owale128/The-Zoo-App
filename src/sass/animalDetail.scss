@@ -90,3 +90,49 @@
             }
         }
 }
+
+@media screen and (max-width: 47.94rem) {
+
+    .animalDetailContainer {
+        height: auto;
+        display: flex;
+        padding-top: 3rem;
+        flex-direction: column;
+
+        .animalContainer, .aboutTxtContainer {
+            width: 20rem;
+        }
+        .aboutTxtContainer {
+            height: auto;
+        }
+        .arrowIcon {
+            transform: rotate(90deg);
+        }
+
+        .feedBtn {
+           
+            &:hover {
+                color: black;
+                background-color: rgb(244, 244, 244);
+            }
+    
+            &:active {
+                color: white;
+                background-color: green;
+            }
+        }
+        
+        .backBtn {
+            &:hover {
+                color: black;
+                background-color: rgb(244, 244, 244);
+            }
+    
+            &:active {
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+
+ }

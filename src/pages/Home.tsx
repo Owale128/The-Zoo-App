@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import '../sass/home.scss';
 import handIcon from '../icons/handIcon.png'
+import squirrel from '../assets/Squirrel.png'
 
 export const Home = () => {
     const navigate = useNavigate()
@@ -12,8 +13,9 @@ export const Home = () => {
     return(
         <div className="homeContainer">
         <h2 id="homeHeading">Välkommen till djur planeten!</h2>
-        <button onClick={handleNavigate}>Klicka här för att komma till djuren</button>
-        <img src={handIcon} alt='Hand icon' />
+        <img src={squirrel} alt="Squirrel" className="squirrel" onClick={handleNavigate} />
+        <img src={handIcon} alt='Hand icon' className="handIcon" />
+        <p>Klicka på ekorren för att komma till djuren</p>
         </div>
     )
 }
