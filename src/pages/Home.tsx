@@ -15,7 +15,7 @@ export const Home = () => {
         <h2 id="homeHeading">Välkommen till djur planeten!</h2>
         <img src={squirrel} alt="Squirrel" className="squirrel" onClick={handleNavigate} />
         <img src={handIcon} alt='Hand icon' className="handIcon" />
-        <p>Klicka på ekorren för att komma till djuren</p>
+        <p>Klicka på ekorren</p>
         </div>
     )
 }
