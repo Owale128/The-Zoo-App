@@ -11,6 +11,7 @@ interface IAnimal{
 
 export const AnimalsApp = () => {
     const animalsFromLocalS: AnimalInfo[] = getAnimalsFromLS();
+    const [loading, setIsLoading] = useState(false)
 
     const[animal, setAnimal] = useState<IAnimal>({
         animals: animalsFromLocalS,
@@ -19,12 +20,15 @@ export const AnimalsApp = () => {
 
     const getAnimalData = async () => {
         try{
-            const animals = await getAnimals()
-             console.log(animals)
-             updateAnimalsInLS(animals)
-            setAnimal({fetchDone: true, animals})
+            setIsLoading(true)   
+                const animals = await getAnimals()
+                console.log(animals)
+                updateAnimalsInLS(animals)
+                setAnimal({fetchDone: true, animals})
     } catch(error) {
              console.log('Could not fetch', error)
+    } finally {
+        setIsLoading(false)
     }
     }
 
@@ -33,7 +37,9 @@ export const AnimalsApp = () => {
             return
         }
         getAnimalData()
-    })
+    },[animal.fetchDone])
+
+    if(loading) return <p style={{fontSize: '4rem', marginTop: '10rem'}}>Loading....</p>
 
     return(
         <>

@@ -5,8 +5,6 @@ import { AnimalsApp } from "./pages/AnimalsApp";
 import { AnimalDetail } from "./pages/AnimalDetail";
 import { NotFound } from "./pages/NotFound";
 
-
-
 export const router = createBrowserRouter([
 {
 
@@ -28,6 +26,4 @@ export const router = createBrowserRouter([
     ],
     errorElement: <NotFound />
     }
-
-
 ])
